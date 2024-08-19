@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100&family=IBM+Plex+Sans:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  max-width: 1040px;
+}
+
+/* MODE JOUR */
+/* :root[data-theme="day" {
+  --bg-color: #FEF7FB;
+  } */
+/* MODE NUIT */
+:root[date-theme="night"] {
+  --bg-color: #21121d; /*pink2*/
+  --header-footer: #37172f; /*pink3*/
+  --primary-text: #eeeef0; /*Mauve12*/
+  --secondary-text-links: #b5b2bc; /*Mauve11*/
+}
+body {
+  color: var(--secondary-text-links);
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  background-color: var(--bg-color);
+}
+/* HEADER */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  color: var(--secondary-text-links);
+}
+/* MAIN */
+
+/* video loop */
+.boxing-class {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.boxing-desc {
+  position: fixed;
+  color: var(--primary-text);
+  top: 10;
+  right: 10;
+  width: 50%;
+  top: 50px;
+  z-index: 1000;
+}
+
+main {
+  height: auto;
+}
+/* MAIN REVIEW */
+.star-rating {
+  display: inline-block;
+}
+.checked {
+  color: yellow;
+}
+.no-checked {
+  color: ;
+}
+header,
+footer {
+  height: 150px;
+  background-color: var(--header-footer);
+}

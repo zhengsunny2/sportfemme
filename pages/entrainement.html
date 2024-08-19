@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sportfemme/assets/css/entrainement.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Entrainement</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#acceuil">acceuil</a>
+        <a href="#nutrition">nutrition</a>
+        <a href="#entrainement">entrainement</a>
+        <a href="#documentaire">documentaire</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <section id="vid-preview">
+      <video autoplay muted loop class="boxing-class">
+        <source
+          src="/sportfemme/assets/video/woman_boxing.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="boxing-desc">
+        <h1>Lorem, ipsum.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odit!
+        </p>
+        <p>Difficulté:</p>
+        <p>Matériel: Gant de boxe</p>
+        <p>Temps: 10min</p>
+      </div>
+    </section>
+    <section id="rating"></section>
+    <section id="suggestion">
+      <div class="review1">
+        <p class="client">Jane Doe</p>
+        <p class="date">07/06/2025</p>
+        <div class="star-rating">
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+          <i class="fa-solid fa-star checked"></i>
+        </div>
+      </div>
+      <div class="review2"></div>
+      <div class="review3"></div>
+    </section>
+    <main></main>
+    <footer>
+      <div class="footer-container">
+        <div class="left">
+          <div class="logo">
+            <div class="logo-container">
+              <a href="pages/accueil.html"
+                ><img
+                  src="assets/images/logo_sans_background_color.png"
+                  alt="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="subscribe">
+            <h3>Abonnez vous</h3>
+            <p>Entrez votre email ici pour recevoir des notifications</p>
+            <form>
+              <div class="input">
+                <input type="email" class="inputtext" />
+                <input type="button" value="s'inscrire" class="button" />
+              </div>
+            </form>
+          </div>
+          <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>
+          © 2024 [Your Name or Company]. All Rights Reserved. | Terms of Service
+          | Privacy Policy
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
