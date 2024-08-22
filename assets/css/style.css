@@ -44,7 +44,7 @@ li {
   padding: 5px 35px;
   background-position: center top;
   background-blend-mode: multiply;
-  background-color:#ffafcc;
+  background-color:var(--pink);
 }
 
 .navbar-links-box{
