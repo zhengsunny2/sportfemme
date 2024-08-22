@@ -5,44 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Profil</title>
+    <title>Profil-SportFemme</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="navbar-container">
                 <div class="logo-container">
-                    <a href="pages/accueil.html"><img src="assets/images/logo_sans_background_color.png" alt="logo"></a>
+                    <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
                 </div>
+                
+                <div class="profil">
+                <h3 id="connect">Connexion</h3>
+                <div  class="profil-picture-container">
+                    <a href="profil.html"><img  src="../assets/images/Ellipse 8.png" alt="profil-picture"></a>
+                </div>
+                <button id="inscrire">Inscription</button>
+                </div>
+            </div>
                 <div class="navbar-links-box">
                     <ul class="navbar-links">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../pages/entrainement.html">Entrainements</a></li>
-                        <li><a href="../pages/nutrition.html">Nutrition</a></li>
-                        <li><a href="../pages/documentaire.html">Documentaires</a></li>
-                        <li><a href="../pages/contact.html">Contact</a></li>
+                        <li><a href="../index.html">ACCUEIL</a></li>
+                        <li><a href="../pages/entrainement.html">ENTRAINEMENTS</a></li>
+                        <li><a href="../pages/nutrition.html">NUTRITION</a></li>
+                        <li><a href="../pages/documentaire.html">DOCUMENTAIRES</a></li>
+                        <li><a href="../pages/contact.html">CONTACT</a></li>
+                    </ul>
+                    <div class="iconCompte"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
-                <div class="profil">
-                    <button>s'inscrire</button>
-                    <div class="profil-picture-container">
-                        <img src="assets/images/profile-pic-navbar.png" alt="profil-picture">
-                    </div>
+        </nav> 
+    </header>
+    <main>
+        <div id="logincontainer">
+         <div id="connectPage" class="page" style="display: none;">
+             <h2>CONNECT</h2>
+             <div>
+                 <label for="connectUser">User:</label>
+                 <input type="text" id="connectUser" name="connectUser">
+             </div>
+             <div>
+                 <label for="connectPassword">Password:</label>
+                 <input type="password" id="connectPassword" name="connectPassword">
+             </div>
+             <button id="connectButton">connect</button>
+             <p><a href="" id="newUserLink">Creer un compte!</a></p>
+         </div>
+ 
+         <div id="inscrirePage" class="page" style="display: none;">
+             <h2>INSCRIRE</h2>
+             <div>
+                 <label for="inscrireUser">User:</label>
+                 <input type="text" id="inscrireUser" name="inscrireUser">
+             </div>
+             <div>
+                 <label for="inscrirePassword">Password:</label>
+                 <input type="password" id="inscrirePassword" name="inscrirePassword">
+             </div>
+             <button id="inscrireButton">inscrire</button>
+         </div>
+     </div>
+     <div id="homePage" >
+        <div id="container">
+         <div class="profilebg">
+          <div id="userbanner">
+            <div><img src="../assets/images/img1.png" alt="" class="rond"></div>
+            <div class="profil-h3"><h3>BIENVENNUE SUR TA PAGE</h3>
+                <h3>JOHANA</h3></div>
+            <div><img src="../assets/images/avatar.png" alt=""></div>
+          </div>
+          <div id="profil">
+          <div id="score">
+            <h2>TES SCORES</h2>
+            <div class="flexwrap">
+                <div class="scorebox" style="background-color: var(--light-rose);">
+                    <h4>ENTRAINEMENTS</h4>
+                    <h3>33</h3>
+                </div>
+                <div class="scorebox" style="background-color:#3CB4D9;">
+                    <h4>DUREE MOYENNE</h4>
+                    <h3>20 MIN</h3>
+                </div>
+                <div class="scorebox" style="background-color: var(--pink);">
+                    <h4>FOLLOWERS</h4>
+                    <h3>33</h3>
+                </div>
+                <div class="scorebox" style="background-color:#FDD700;">
+                    <h4>YOGA</h4>
+                    <h3>20 MIN</h3>
+                </div>
+                <div class="scorebox" style="background-color: var(--blue);">
+                    <h4>VIDEOS</h4>
+                    <h3>33</h3>
+                </div>
+                <div class="scorebox" style="background-color: var(--pink);">
+                    <h4>COURSE A PIEDS</h4>
+                    <h3>20 MIN</h3>
+                </div>
+                <div class="scorebox" style="background-color: #FDD700;">
+                    <h4>VELO</h4>
+                    <h3>20 MIN</h3>
+                </div>
+                <div class="scorebox" style="background-color: var(--blue);">
+                    <h4>MEDITATION</h4>
+                    <h3>20 MIN</h3>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main></main>
+          </div>
+          <div id="prefere">
+            <h2>TES VIDEOS PREFEREES</h2>
+            <div class="flexwrap">
+                <div><img src="../assets/images/N10.jpg" alt=""></div>
+                <div><img src="../assets/images/N10.jpg" alt=""></div>
+                <div><img src="../assets/images/N11.jpg" alt=""></div>
+                <div><img src="../assets/images/N13.jpg" alt=""></div>
+                <div><img src="../assets/images/photo8.jpg" alt=""></div>
+                <div><img src="../assets/images/photo7.jpg" alt=""></div>
+                <div><img src="../assets/images/photo6.jpg" alt=""></div>
+                <div><img src="../assets/images/photo3.jpg" alt=""></div>
+                <div><img src="../assets/images/photo4.jpg" alt=""></div>
+                <div><img src="../assets/images/photo1.jpg" alt=""></div>
+                <div><img src="../assets/images/photo10.jpg" alt=""></div>
+                <div><img src="../assets/images/photo2.jpg" alt=""></div>
+            </div>
+          </div>
+          <div id="sesvideos">
+            <h2>TES VIDEOS MISES EN LIGNE</h2>
+            <div class="flexwrap">
+                <div><img src="../assets/images/D1.jpg" alt=""></div>
+                <div><img src="../assets/images/D2.jpg" alt=""></div>
+                <div><img src="../assets/images/D3.jpg" alt=""></div>
+                <div><img src="../assets/images/D4.jpg" alt=""></div>
+                <div><img src="../assets/images/D5.jpg" alt=""></div>
+                <div><img src="../assets/images/D6.jpg" alt=""></div>
+                <div><img src="../assets/images/D7.jpg" alt=""></div>
+                <div><img src="../assets/images/D8.jpg" alt=""></div>
+                <div><img src="../assets/images/D9.jpg" alt=""></div>
+                <div><img src="../assets/images/photo1.jpg" alt=""></div>
+                <div><img src="../assets/images/photo10.jpg" alt=""></div>
+                <div><img src="../assets/images/photo2.jpg" alt=""></div>
+            </div>
+          </div>
+         </div>
+         </div>
+        </div>
+        </div>
+     </div>
+        <script src="../assets/Javascript/js.js"></script>
+    </main>
     <footer>
         <div class="footer-container">
-            <div class="left">
+            <div class="left">                
                 <div class="logo">
-                    <div class="logo-container">
-                        <a href="pages/accueil.html"><img src="assets/images/logo_sans_background_color.png"
-                                alt="logo"></a>
-                    </div>
+                <div class="logo-container">
+                    <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
                 </div>
             </div>
-            <div class="center">
+            <div class="center subscribe p">
+                <p>Adresse: 15 rue henri  chevreau,75011,Paris</p>
+                <p>Tel: 0467897678</p>
+                <p>Email: contact@sportfemme.com</p>
+            </div>
+            <div class="right">
                 <div class="subscribe">
                     <h3>Abonnez vous</h3>
                     <p>Entrez votre email ici pour recevoir des notifications</p>
@@ -53,18 +182,15 @@
                         </div>
                     </form>
                 </div>
-                <div class="social-media">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
             </div>
+
+               
+            </div>       
         </div>
         <hr>
         <div class="copyright">
             <p>© 2024 [Your Name or Company]. All Rights Reserved. | Terms of Service | Privacy Policy</p>
         </div>
     </footer>
-
 </body>
 </html>
