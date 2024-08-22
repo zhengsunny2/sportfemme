@@ -581,6 +581,7 @@ function articlesAffiche(dataArray, containerId, categorie) {
     ).forEach(article => {
         const articleHtml = `
             <div class="article">
+            <a href="../pages/entrainement-fiche.html" target="_blank">
                 <img src="${article.image}" alt="${article.titre}"  class="large-image">
                 <div class="small-image-wrapper">
                     <img src="../assets/images/video.png" alt="" class="small-image">
@@ -595,6 +596,7 @@ function articlesAffiche(dataArray, containerId, categorie) {
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
         `;
         container.innerHTML += articleHtml;
