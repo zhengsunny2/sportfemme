@@ -1,70 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sportfemme/assets/css/entrainement.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="/sportfemme/assets/js/script.js" defer></script>
     <title>Entrainement</title>
-</head>
-<body>
+  </head>
+  <body class="light-mode">
     <header>
-        <nav>
-            <div class="navbar-container">
-                <div class="logo-container">
-                    <a href="pages/accueil.html"><img src="assets/images/logo_sans_background_color.png" alt="logo"></a>
-                </div>
-                <div class="navbar-links-box">
-                    <ul class="navbar-links">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../pages/entrainement.html">Entrainements</a></li>
-                        <li><a href="../pages/nutrition.html">Nutrition</a></li>
-                        <li><a href="../pages/documentaire.html">Documentaires</a></li>
-                        <li><a href="../pages/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="profil">
-                    <button>s'inscrire</button>
-                    <div class="profil-picture-container">
-                        <img src="assets/images/profile-pic-navbar.png" alt="profil-picture">
-                    </div>
-                </div>
+      <nav>
+        <div class="navbar-container">
+          <div class="logo-container">
+            <a href="pages/accueil.html"
+              ><img
+                src="/sportfemme/assets/images/logo_sans_background_color.png"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="navbar-links-box">
+            <ul class="navbar-links">
+              <li><a href="pages/accueil.html">Accueil</a></li>
+              <li><a href="pages/entrainement.html">entrainement</a></li>
+              <li><a href="pages/nutrition.html">nutrition</a></li>
+              <li><a href="pages/sociologique.html">sociologique</a></li>
+              <li><a href="pages/accueil.html">contact</a></li>
+            </ul>
+            <!-- icon switch dark light -->
+            <span class="material-symbols-outlined btn-dark" id="dark-mode">
+              dark_mode
+            </span>
+            <span class="material-symbols-outlined" id="light-mode">
+              light_mode
+            </span>
+            <!-- icon switch dark light -->
+          </div>
+          <div class="profil">
+            <button>s'inscrire</button>
+            <div class="profil-picture-container">
+              <img
+                src="/sportfemme/assets/images/profile-pic-navbar.png"
+                alt="profil-picture"
+              />
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
+    <main id="grid-entrainement">
+      <section id="vid-preview" class="vid-preview">
+        <h1>Fiche</h1>
+        <!-- <div class="video-illustration"> -->
+        <video autoplay muted loop>
+          <source
+            src="/sportfemme/assets/video/woman_boxing.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <!-- </div> -->
+      </section>
+      <section id="desc" class="desc">
+        <div class="boxing-desc">
+          <div class="flex-end">
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odit!
+          </p>
+          <p>Difficulté: <i class="fa-solid fa-star"></i></p>
+          <p>Matériel: Gant de boxe</p>
+          <p>Temps: 10min</p>
+        </div>
+      </section>
+      <!-- SECTION COMMENTAIRE -->
+      <section id="review" class="review">
+        <!-- Commentaire apres visualisation -->
+        <div id="userReview">
+          <label for="comment">Commentaires</label><br />
+          <input
+            type="text"
+            id="comment-input"
+            name="comment-input"
+            placeholder="Veuillez ecrire votre avis ici "
+          />
+          <input type="date" name="date-input" id="date-input" />
+          <button id="addComment">Envoyer</button>
+          <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </div>
+        <ul id="review-container">
+          <!-- avis 1 -->
+          <li class="review1">
+            <div class="star-rating">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <div class="inline-block">
+              <p class="client">Jane Doe</p>
+              <p class="date">07/06/2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+              harum!
+            </p>
+          </li>
+          <!-- avis 2 -->
+          <li class="review2">
+            <div class="star-rating">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star no-checked"></i>
+            </div>
+            <div class="inline-block">
+              <p class="client">Jane Doe</p>
+              <p class="date">07/06/2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+              harum!
+            </p>
+          </li>
+          <!-- avis 3 -->
+          <li class="review3">
+            <div class="star-rating">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <div class="inline-block">
+              <p class="client">Jane Doe</p>
+              <p class="date">07/06/2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+              harum!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- SECTION MULTIMEDIA  -->
+      <section id="playlist" class="playlist">
+        <h2>Suggestion</h2>
+        <ul class="suggestions-playlist">
+          <li class="playlist-video">
+            <article>
+              <video controls>
+                <source
+                  class="video-source"
+                  id="fullScreen1"
+                  src="/sportfemme/assets/video/woman_boxing.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h3>Lorem, ipsum.</h3>
+              <p></p>
+            </article>
+          </li>
+          <li class="playlist-video">
+            <article>
+              <video controls>
+                <source
+                  class="video-source"
+                  src="/sportfemme/assets/video/woman_boxing.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h3>Lorem, ipsum.</h3>
+              <p></p>
+            </article>
+          </li>
+          <li class="playlist-video">
+            <article>
+              <video controls>
+                <source
+                  class="video-source"
+                  src="/sportfemme/assets/video/woman_boxing.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h3>Lorem, ipsum.</h3>
+              <p></p>
+            </article>
+          </li>
+          <li class="playlist-video">
+            <article>
+              <video controls>
+                <source
+                  class="video-source"
+                  src="/sportfemme/assets/video/woman_boxing.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h3>Lorem, ipsum.</h3>
+              <p></p>
+            </article>
+          </li>
+          <li class="playlist-video">
+            <article>
+              <video controls>
+                <source
+                  class="video-source"
+                  src="/sportfemme/assets/video/woman_boxing.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h3>Lorem, ipsum.</h3>
+              <p></p>
+            </article>
+          </li>
+          <li class="playlist-video">
+            <article>
+              <video controls>
+                <source
+                  class="video-source"
+                  src="/sportfemme/assets/video/woman_boxing.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h3>Lorem, ipsum.</h3>
+              <p></p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
     <footer>
-        <div class="footer-container">
-            <div class="left">
-                <div class="logo">
-                    <div class="logo-container">
-                        <a href="pages/accueil.html"><img src="assets/images/logo_sans_background_color.png"
-                                alt="logo"></a>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="left">
+          <div class="logo">
+            <div class="logo-container">
+              <a href="pages/accueil.html"
+                ><img
+                  src="/sportfemme/assets/images/logo_sans_background_color.png"
+                  alt="logo"
+              /></a>
             </div>
-            <div class="center">
-                <div class="subscribe">
-                    <h3>Abonnez vous</h3>
-                    <p>Entrez votre email ici pour recevoir des notifications</p>
-                    <form>
-                        <div class="input">
-                            <input type="email" class="inputtext">
-                            <input type="button" value="s'inscrire" class="button">
-                        </div>
-                    </form>
-                </div>
-                <div class="social-media">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-            </div>
+          </div>
         </div>
-        <hr>
-        <div class="copyright">
-            <p>© 2024 [Your Name or Company]. All Rights Reserved. | Terms of Service | Privacy Policy</p>
+        <div class="center">
+          <div class="subscribe">
+            <h3>Abonnez vous</h3>
+            <p>Entrez votre email ici pour recevoir des notifications</p>
+            <form>
+              <div class="input">
+                <input
+                  type="email"
+                  class="inputtext"
+                  placeholder="votre@email.com"
+                />
+                <input type="button" value="s'inscrire" class="button" />
+              </div>
+            </form>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i
+                class="fa-brands fa-facebook-f"
+                title="Suivez-nous sur facebook"
+              ></i
+            ></a>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
         </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>
+          © 2024 [Your Name or Company]. All Rights Reserved. | Terms of Service
+          | Privacy Policy
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
