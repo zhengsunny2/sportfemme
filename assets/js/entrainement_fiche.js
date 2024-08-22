@@ -5,7 +5,7 @@
 //if (video.requestFullscreen) {
 //video.requestFullscreen();
 //}
-//});
+///});
 
 //COMMENTAIRE
 
