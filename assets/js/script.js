@@ -1,5 +1,6 @@
-// SECTION PLAYLIST CREATION LECTEUR VIDEO
-
+// SECTION PLAYLIST MODE PLEIN ECRAN
+const fullScreenVid = document.getElementById("fullScreen1");
+fullScreenVid.requestFullscreen();
 //COMMENTAIRE
 
 //FAVORIS
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   swapBody.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
     const darkMode = document.body.classList.contains("dark-mode");
     // si darkMode true
     if (darkMode) {
