@@ -27,10 +27,11 @@
 /*} */
 /* BODY */
 body.light-mode {
-  background-color: var(--blue);
+  background-color: #fef7fb;
 }
 body.dark-mode {
-  background-color: var(--thistle);
+  background-color: #21121d;
+  color: #b5b2bc;
 }
 body {
   font-family: "IBM Plex Sans Condensed", sans-serif;

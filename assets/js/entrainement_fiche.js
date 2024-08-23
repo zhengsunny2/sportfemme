@@ -1,11 +1,18 @@
 // SECTION PLAYLIST MODE PLEIN ECRAN
-//const video = document.querySelector("video");
+const video = document.getElementById("fullScreen1");
 
-//video.addEventListener("click", () => {
-//if (video.requestFullscreen) {
-//video.requestFullscreen();
-//}
-///});
+video.addEventListener("click", () => {
+  if (!document.fullscreenElement) {
+    // verifie que le document n'est pas en mode grand ecran
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+});
 
 //COMMENTAIRE
 
