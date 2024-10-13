@@ -5,152 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <title>Accueil-SportFemme</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="navbar-container">
-                <div class="logo-container">
-                    <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-                </div>
-                
-                <div class="profil">
-                <h3 id="connect">Connexion</h3>
-                <div  class="profil-picture-container">
-                    <a href="profil.html"><img  src="assets/images/Ellipse 8.png" alt="profil-picture"></a>
-                </div>
-                <button id="inscrire">Inscription</button>
-                </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/Logo-Icones/logo-blanc.png" alt="Running Logo">
             </div>
-                <div class="navbar-links-box">
-                    <ul class="navbar-links">
-                        <li><a href="index.html">ACCUEIL</a></li>
-                        <li><a href="pages/entrainement.html">ENTRAINEMENTS</a></li>
-                        <li><a href="pages/nutrition.html">NUTRITION</a></li>
-                        <li><a href="pages/documentaire.html">DOCUMENTAIRES</a></li>
-                        <li><a href="pages/contact.html">CONTACT</a></li>
-                    </ul>
-                    <div class="iconCompte"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
+            <ul class="nav-links">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="pages/entrainement.html">ENTRAINEMENT</a></li>
+                <li><a href="pages/nutrition.html">NUTRITION</a></li>
+                <li><a href="pages/documentaire.html">DOCUMENTAIRE</a></li>
+                <li><a href="pages/contact.html">CONTACT</a></li>
+            </ul>
+            <div class="login">
+                <a href="pages/profil.html" class="btn-login">SE CONNECTER</a>
+            </div>
+       
         </nav> 
     </header>
-<main>
-    <div id="logincontainer">
-        <div id="connectPage" class="page" style="display: none;">
-            <h2>connect</h2>
-            <div>
-                <label for="connectUser">User:</label>
-                <input type="text" id="connectUser" name="connectUser">
-            </div>
-            <div>
-                <label for="connectPassword">Password:</label>
-                <input type="password" id="connectPassword" name="connectPassword">
-            </div>
-            <button id="connectButton">connect</button>
-            <p><a href="" id="newUserLink">Creer un compte!</a></p>
-        </div>
+<main class="accueil">
+    <img id="accueil-photo-principale" src="assets/images/Accueil/Design sans titre (2).png" alt="icone-femme-qui-court-baskets">
+    <p id="accueil-message">REJOIGNEZ LA COMMUNAUTE  DES FEMMES QUI SE METTENT EN MOUVEMENT !</p>
+<img class="accueil-photo" src="assets/images/Accueil/boxe-femme-agee.jpg" alt="boxe-femme-agee">
+<img class="accueil-photo" src="assets/images/Accueil/entraineur-aidant-debutant-au-gymnase.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Accueil/femme-bionique.png" alt="">
+<img class="accueil-photo" src="assets/images/Accueil/femme-forte-fitness-fond-vert.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Accueil/femme-sportive-collants-leggings-fait-autoportrait.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Accueil/femmes-au-gymnase-prendre-photos.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Accueil/jeunes-amies-caucasiennes-faisant-exercices-s-etirant-exterieur-concept-mode-vie-sain_181624-44483.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Nutrition/N13.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Nutrition/N17.jpg" alt="">
+<img class="accueil-photo" src="assets/images/Documentaire/Equipe-nb.jpg" alt="">
 
-        <div id="inscrirePage" class="page" style="display: none;">
-            <h2>inscrire</h2>
-            <div>
-                <label for="inscrireUser">User:</label>
-                <input type="text" id="inscrireUser" name="inscrireUser">
-            </div>
-            <div>
-                <label for="inscrirePassword">Password:</label>
-                <input type="password" id="inscrirePassword" name="inscrirePassword">
-            </div>
-            <button id="inscrireButton">inscrire</button>
-        </div>
-    </div>
-    <div id="homePage" >
-        <div class="accueil-main">
-            <div class="accueil-animation">
-                <img class="accueil-course-logo" src="./assets/Images/img1.png" alt="Silhouette femme qui court">
-                <img class="accueil-image-enAvantToutes" src="./assets/Images/img2-removebg-preview (1).png" alt="EN AVANT TOUTES">
-            </div>
-    
-            <div class="accueil-peleMele">
-                <img id="accueil-main" src="./assets/Images/img3.jpg" alt="Mains tenant des altères">
-                <img id="accueil-portrait-trois" src="./assets/Images/img4.jpg" alt="Portrait de trois femmes sportives">
-                <img id="accueil-femme-tapis" src="./assets/Images/img7.jpg" alt="Femme sportive tenant un tapis de sport">
-    
-    
-                <div id="accueil-texte">
-                    <h2 id="resterMotivee">RESTER MOTIVEE <br>
-                        ET CONNECTEE <br>
-                        AVEC LA COMMUNAUTE <br>
-                        !!!</h2>
-                </div>
-    
-    
-                <img id="accueil-tapis-alteres" src="./assets/Images/img5.jpg" alt="Tapis de sport et altères">
-                <img id="accueil-femme-montre" src="./assets/Images/img6.jpg"
-                    alt="Femme sportive regardant sa montre de course">
-                <img id="accueil-dos-altere" src="./assets/Images/img8.jpg"
-                    alt="Femme sportive de dos couchée et tenant des altères pendant un exercice de pilate">
-                <img id="accueil-yoga" src="./assets/Images/img9.jpg" alt="Femme faisant du yoga">
-    
-    
-    
-                <img id="accueil-groupe-entrainement" src="./assets/Images/img10.jpg"
-                    alt="Groupe de femmes sportives pendant un entraînement">
-                <img id="accueil-personnes-chaussures" src="./assets/Images/img11.jpg"
-                    alt="Deux personnes lassant leurs chaussures de sport">
-            </div>
-    
-            <div class="accueil-presentation">
-                <div>
-                    <br><br><br><br><br><br>
-                    <div id="accueil-presentation-motivee-texte">
-                        <h3 id="motivee">MOTIVEE</h3>
-                        <p class="accueil-texte">Restée motivée est le plus difficile, c’est pourquoi nous avons réalisé ce
-                            qui
-                            nous
-                            manquait lorsque nous nous sommes mises au sport.
-                            Une safe place, où trouver de la motivation à travers des vidéos.
-                        </p>
-                        <br><br><br><br><br><br><br>
-                    </div>
-    
-                    <div id="accueil-presentation-connectee-image">
-                        <img src="./assets/Images/img13.png" alt="Illustration d'un ordinateur coloré">
-                    </div>
-    
-                </div>
-    
-                <div>
-                    <div id="accueil-presentation-motivee-image">
-                        <img src="./assets/Images/img12.png" alt="You are enougth dans une bulle">
-                    </div>
-                    <br><br><br><br> <br><br>
-                    <div id="accueil-presentation-connectee-texte">
-                        <h3 id="connectee">CONNECTEE</h3>
-                        <p class="accueil-texte">Regardez des vidéos c’est bien mais notre entourage ne comprend pas
-                            toujours
-                            pourquoi on change de style de vie.
-                            Nous voulons ici vous donner la possibilité de partager des vidéos que les membres de la
-                            communauté
-                            pourront commenter.
-                            ATTENTION : Si les commentaires ne sont pas bienveillants, nous nous donnons le droit de
-                            vous
-                            exclure définitivement du réseau.</p>
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-       <script src="assets/Javascript/js.js"></script>
+<script src="../assets/Javascript/js.js"></script>
 </main>
 <footer>
     <div class="footer-container">
         <div class="left">                
             <div class="logo">
             <div class="logo-container">
-                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/Logo-Icones/logo-blanc.png" alt="logo"></a>
             </div>
             <div class="social-media">
                 <i class="fa-brands fa-facebook-f"></i>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Entrainement-SportFemme</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/Logo-Icones/logo-blanc.png" alt="Running Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">ACCUEIL</a></li>
+                <li><a href="entrainement-.html">ENTRAINEMENT</a></li>
+                <li><a href="nutrition.html">NUTRITION</a></li>
+                <li><a href="documentaire.html">DOCUMENTAIRE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="login">
+                <a href="#" class="btn-login">SE CONNECTER</a>
+            </div>
+       
+        </nav> 
+    </header>
+    <main>
+        <div id="logincontainer">
+         <div id="connectPage" class="page" style="display: none;">
+              <h2>CONNECT</h2>
+             <div>
+                 <label for="connectUser">User:</label>
+                 <input type="text" id="connectUser" name="connectUser">
+             </div>
+             <div>
+                 <label for="connectPassword">Password:</label>
+                 <input type="password" id="connectPassword" name="connectPassword">
+             </div>
+             <button id="connectButton">connect</button>
+             <p><a href="" id="newUserLink">Creer un compte!</a></p>
+         </div>
+ 
+         <div id="inscrirePage" class="page" style="display: none;">
+            <h2>INSCRIRE</h2>
+             <div>
+                 <label for="inscrireUser">User:</label>
+                 <input type="text" id="inscrireUser" name="inscrireUser">
+             </div>
+             <div>
+                 <label for="inscrirePassword">Password:</label>
+                 <input type="password" id="inscrirePassword" name="inscrirePassword">
+             </div>
+             <button id="inscrireButton">inscrire</button>
+         </div>
+     </div>
+     <div id="homePage" >
+        <div id="container">
+            <button class="button-h1">ENTRAINEMENT</button>
+            <div id="filter">
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'all')">Tout</button>
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'Yoga')">Yoga</button>
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'Danse')">Danse</button>
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'Aerobic')">Fitness</button>
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'sports')">Marche et course à pieds</button>
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'balle')">Musculation</button>
+                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'fitness')">Boxe</button>
+            </div>
+            <div id="articles-container"></div>
+    
+        </div>
+     </div>
+        <script src="../assets/Javascript/js.js"></script>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="left">                
+                <div class="logo">
+                <div class="logo-container">
+                    <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                </div>
+            </div>
+            <div class="center subscribe p">
+                <p>Adresse: 15 rue henri  chevreau,75011,Paris</p>
+                <p>Tel: 0467897678</p>
+                <p>Email: contact@sportfemme.com</p>
+            </div>
+            <div class="right">
+                <div class="subscribe">
+                    <h3>Abonnez vous</h3>
+                    <p>Entrez votre email ici pour recevoir des notifications</p>
+                    <form>
+                        <div class="input">
+                            <input type="email" class="inputtext">
+                            <input type="button" value="s'inscrire" class="button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+               
+            </div>       
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© 2024 [Your Name or Company]. All Rights Reserved. | Terms of Service | Privacy Policy</p>
+        </div>
+    </footer>
+  </body>
+</html>
