@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/Javascript/inscription.js">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Entrainement-SportFemme</title>
+    <title>Contact</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -35,22 +38,50 @@
                 </div>
         </nav> 
     </header>
-    <main>
-        <div id="container">
-            <div class="h1left"><h1>ENTRAINEMENT</h1></div>
-            <div id="filter">
-                <button class="button-filter button-filter1" onclick="articlesAffiche(articles, 'articles-container', 'all', 'style1')">Tout</button>
-                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'Yoga', 'style1')">Yoga</button>
-                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'Dance', 'style1')">Dance</button>
-                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'Aerobic', 'style1')">Aérobic</button>
-                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'sports', 'style1')">Sports de plein air</button>
-                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'balle', 'style1')">Jeux de balle</button>
-                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'fitness', 'style1')">Appareils de fitness</button>
-            </div>
-            <div id="articles-container"></div>
     
+    <main>
+        <div id="logincontainer">
+            <div id="connectPage" class="page" style="display: block;">
+                <h2>CONNECT</h2>
+                <div>
+                    <label for="connectUser">User:</label>
+                    <input type="text" id="connectUser" name="connectUser">
+                </div>
+                <div>
+                    <label for="connectPassword">Password:</label>
+                    <input type="password" id="connectPassword" name="connectPassword">
+                </div>
+                <button id="connectButton">connect</button>
+                <p><a href="javascript:void(0)" id="newUserLink">Créer un compte!</a></p>
+            </div>
+    
+            <div id="inscrirePage" class="page" style="display: none;">
+                <h2>INSCRIRE</h2>
+                <div>
+                    <label for="inscrireUser">User:</label>
+                    <input type="text" id="inscrireUser" name="inscrireUser">
+                </div>
+                <div>
+                    <label for="inscrirePassword">Password:</label>
+                    <input type="password" id="inscrirePassword" name="inscrirePassword">
+                </div>
+                <button id="inscrireButton">Inscrire</button>
+            </div>
         </div>
-        <script src="../assets/Javascript/js.js"></script>
+        <script src="../assets/Javascript/inscription.js"></script>
+        <script>
+            document.getElementById('connectButton').addEventListener('click', function() {
+                const user = document.getElementById('connecUser').value;
+                const password = document.getElementById('connecPassword').value;
+    
+                if (user && password) {
+                    connecUser(user); 
+                    window.location.href = 'profil.html'; 
+                } else {
+                    alert('Veuillez entrer un identifiant et un mot de passe!');
+                }
+            });
+        </script>
     </main>
     <footer>
         <div class="footer-container">
@@ -92,5 +123,5 @@
             <p>© 2024 [Your Name or Company]. All Rights Reserved. | Terms of Service | Privacy Policy</p>
         </div>
     </footer>
-  </body>
+</body>
 </html>

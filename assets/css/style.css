@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-family:"IBM Plex Sans Condensed", sans-serif;
   box-sizing: border-box;
 }
 
@@ -27,15 +27,16 @@ li {
 }
 
 :root {
-  --pink: #ffafcc;
-  --thistle: #cdb4db;
-  --light-rose: #ffc8dd;
-  --blue: #bde0FE;
-  --light-blue: #a2d2ff;
+  --bluesky:#00A0B0;
+  --vert: #CAF83E;
+  --pink: #FEA2B9;
+  --thistle: #00373E;
   --blanc: #fff;
   --black: #000;
   --light-grey: #bbbbbb40;
+
 }
+
 /*header*/
 .navbar-container {
   display: flex;
@@ -44,15 +45,18 @@ li {
   padding: 5px 35px;
   background-position: center top;
   background-blend-mode: multiply;
-  background-color:var(--pink);
+  background-color:var(--bluesky);
 }
-
+.navbar-container button{
+  color: var(--blanc);
+  background-color: var(--vert);
+}
 .navbar-links-box{
   max-width: 100%;
-  height: 40px;
+
   display: flex;
   flex-direction: row;
-  background-color: var(--light-rose);
+  background-color: var(--bluesky);
   padding: 5px 30px;
 align-items: center;
 text-align: center;
@@ -62,7 +66,7 @@ text-align: center;
   width: 100%;
   display: flex;
   gap: 60px;
-  color: var(--blanc);
+  color: var(--bluesky);
   flex-wrap: wrap;
   justify-content:center;
 align-items: center;
@@ -72,18 +76,28 @@ text-align: center;
 
 .navbar-links a{
   color: var(--blanc);
-  font-size: 20px;
-  font-family: "IBM Plex Sans" ;
+  font-size: 30px;
+  font-family: "Bebas Neue" ;
   font-weight: 700;
   cursor: pointer;
+  transform: scale(1);
 }
 
 .navbar-links a:hover {
-  color: var(--light-blue);
+  padding: 10px;
+  transform: scale(1.2);
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition:width 500ms;
+  transition-delay: 0,200ms;
+  color: var(--blanc);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--vert);
+  border:2px var(--vert) solid;
 }
 
 .iconCompte{
-  color: var(--pink);
+  color: var(--thistle);
   font-size: 20px;
   font-weight: lighter;
   width: 45px;
@@ -100,25 +114,26 @@ text-align: center;
 
 .iconCompte:hover{
   color: var(--blanc);
-  background-color: var(--pink);
+  background-color: var(--thistle);
 }
 
 .profil button{
 cursor: pointer;
   outline: none;
   border: none;
-  background-color: var(--blanc);
-  color: var(--pink);
-  padding: 8px 30px;
+  background-color: var(--vert);
+  color: var(--thistle);
+  padding: 8px 35px;
   font-size: 24px;
-  font-style:italic;
+  transform: scaleX(0.7); 
+  display: inline-block; 
   margin-right: 30px;
-  font-weight: normal;
+  font-weight: 600;
 }
 
-.profil button:hover{  background-color: var(--light-rose);
-
-  color: var(--blanc);
+.profil button:hover{  
+  background-color: var(--thistle);
+  color: var(--vert);
 }
 
 .profil {
@@ -131,17 +146,6 @@ cursor: pointer;
   gap: 30px;
 }
 
-.profil h3{
-  font-size: 20px;
-  font-style: italic;
-  color: var(--blanc);
-  font-weight: normal;
-  cursor: pointer;
-  font-family:"IBM Plex Sans";
-}
-.profil h3:hover{
-  color: var(--light-rose);
-}
 
 .logo-container img {
   width: 80px;
@@ -165,7 +169,7 @@ cursor: pointer;
 }
 
 .profil-picture-container:hover{
-  background-color:var(--light-rose);
+  background-color:var(--thistle);
   color: var(--blanc);
 }
 /*header fini*/
@@ -196,7 +200,7 @@ background-color: #f4f4f4;
 #logincontainer label {
   display: block;
   margin-bottom: 5px;
-  color: var(--pink);
+  color: var(--bluesky);
 }
 
 #logincontainer input {
@@ -208,21 +212,21 @@ background-color: #f4f4f4;
 #logincontainer h2{
   font-size: 20px;
   font-weight: 700;
-  color: var(--pink);
+  color: var(--bluesky);
   margin-top: 20px;
   text-align: center;
-  font-family:"IBM Plex Sans";
+  font-family:"Bebas Neue";
 }
 
 #logincontainer input{
-  border: 1px solid var(--pink);
+  border: 1px solid var(--bluesky);
   border-radius: 10px;
 }
 
 #logincontainer button {
   width: 100%;
   padding: 10px;
-  background-color: var(--pink);
+  background-color: var(--bluesky);
   color: white;
   border: none;
   border-radius: 5px;
@@ -231,7 +235,7 @@ background-color: #f4f4f4;
 }
 
 #logincontainer button:hover {
-  background-color: var(--pink);
+  background-color: var(--bluesky);
 }
 
 #logincontainer p {
@@ -240,7 +244,7 @@ background-color: #f4f4f4;
 }
 
 #logincontainer a {
-  color: var(--pink);
+  color: var(--bluesky);
   text-decoration: none;
 }
 
@@ -253,8 +257,8 @@ background-color: #f4f4f4;
 /*juliette*/
 
 .accueil-texte {
-  font-family: "IBM Plex Sans", sans-serif;
-  color: var(--pink);
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--bluesky);
 }
 
 /* PAGE ACCUEIL MAIN */
@@ -395,8 +399,7 @@ background-color: #f4f4f4;
 }
 
 #accueil-rejoignez{
-  font-family: "IBM Plex Sans", sans-serif;
-  font-style: italic;
+  font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 230%;
   color: #3cb4d9;
@@ -406,7 +409,7 @@ background-color: #f4f4f4;
 #resterMotivee,
 #motivee,
 #connectee {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: italic;
   font-size: 200%;
   color: #3cb4d9;
@@ -468,7 +471,7 @@ background-color: #f4f4f4;
 #carre{
   height: 530px;
     width: 500px;
-    background: var(--pink);
+    background: var(--bluesky);
     margin: auto;
     margin-bottom: 30px;
 }
@@ -477,7 +480,7 @@ background-color: #f4f4f4;
   position: absolute;
   margin-left: 18%;
   margin-top: 160px;
-  color: var(--pink);
+  color: var(--bluesky);
 }
 #femmeQuiCourt{
   position: absolute;
@@ -486,7 +489,7 @@ background-color: #f4f4f4;
 }
 
 #onResteConnectees{
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: italic;
   font-size: 200%;
   color: #3cb4d9;
@@ -498,7 +501,7 @@ background-color: #f4f4f4;
 #contactAdresseMail,
 #contactMessage{
   display: inline-block;
-font-family: "IBM Plex Sans", sans-serif;
+font-family: "Bebas Neue", sans-serif;
 font-style: italic;
 color: #3858A7;
 }
@@ -506,12 +509,12 @@ color: #3858A7;
 #contactInputNom,
 #contactInputMail,
 #contactTexte{
-  font-family: "IBM Plex Sans", sans-serif;
-  color: var(--pink);
-  border-color: var(--pink);
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--bluesky);
+  border-color: var(--bluesky);
   /* appearance: none;
   border-style:none; */
-  outline: 1px solid var(--pink);
+  outline: 1px solid var(--bluesky);
 }
 .errorText{
   color: #3cb4d9;
@@ -529,8 +532,7 @@ color: #3858A7;
   flex-direction: column;
   width: 100%;
   height: auto;
- /* background-image:url(../images/bg.png);*/
- background-color: #FEF7FB;/*changer bg color*/
+  background-image: url("../images/BG.png");
  background-attachment: scroll;
 background-position: center center;
 background-size: cover;
@@ -543,15 +545,15 @@ align-items: center;
 .button-h1{
   background-color: var(--blanc);
   border: none;
-  border-radius: 10px;
   width: 350px;
   height: 80px;
   margin: 30px auto; 
-color: var(--pink);
+color: var(--bluesky);
 text-align: center;
 font-size: 30px;
 font-weight: 700;
-font-family:"IBM Plex Sans";
+font-family:"Bebas Neue";
+
 }
 
 #articles-container, #articles2-container,#articles3-container{
@@ -562,12 +564,12 @@ font-family:"IBM Plex Sans";
 }
 
 
-  .article {
+.article {
     position: relative;
     width: 365px; 
     height: 470px;
     overflow: hidden;
-    box-shadow: 0 0 10px var(--pink);
+
     margin: 20px;
     cursor: pointer;
 }
@@ -586,7 +588,7 @@ object-position: center;
     top: 50%;
     left: 50%;
     padding: 105px 50px; 
-    border: 1px solid #FFAFCC;
+
     transform: translate(-50%, -50%);
     z-index: 1; 
     transition: opacity 0.5s ease;
@@ -605,7 +607,6 @@ object-position: center;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 175, 204, 0.8); 
     transform: translateY(-100%);
     transition: transform 0.5s ease;
     
@@ -641,51 +642,122 @@ object-position: center;
 }
 
 
+.article.style1 {
+  box-shadow: 0 0 10px var(--bluesky);
+}
+
+.small-image-wrapper.style1 {
+  border: 1px solid var(--bluesky);
+}
+
+.overlay.style1 {
+  background-color: rgba(0, 123, 255, 0.5); 
+}
+
+
+.article.style2 {
+  box-shadow: 0 0 10px var(--vert);
+}
+
+.small-image-wrapper.style2 {
+  border: 1px solid var(--vert);
+}
+
+.overlay.style2 {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+
+.article.style3 {
+  box-shadow: 0 0 10px var(--pink);
+}
+
+.small-image-wrapper.style3 {
+  border: 1px solid var(--pink);
+}
+
+.overlay.style3 {
+  background-color: rgba(255, 20, 147, 0.5);
+}
 
 #filter{
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 40px;
+flex-wrap: wrap;
+justify-content: start;
+width: 100%;
+margin-left:75px;
+margin-top: 30px;
+
 }
  .button-filter {
   margin: 5px;
   padding: 10px 20px;
   border: none;
-  /*border-radius: 5px;*/
-  background-color: var(--pink);
   color: white;
   cursor: pointer;
   font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+.button-filter1{
+  background-color: var(--bluesky);
+  border: 2px solid var(--bluesky);
+}
+.button-filter2{
+  background-color: var(--vert);
+  border: 2px solid var(--vert);
+}
+.button-filter3{
+  background-color: var(--pink);
+  border: 2px solid var(--pink);
 }
 
 .button-filter:hover {
-  background-color: var(--light-rose);
+  background-color: var(--thistle);
 }
 
 /*topic fini*/
 
 
 /*profil*/
-
-.profilebg{
+h1{
+  color: var(--blanc);
+  font-size: 100px;
+  font-family:"Bebas Neue";
+  font-weight: 700;
+  margin-left: 20px;
+  display: flex;
+  justify-content:left;
+}
+.h1left{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
   width: 100%;
-  height: auto;
-  background-color: var(--blanc);
+  margin-left: 48px;
+  margin-top: 50px;
+}
+.profilebg{
+ 
+  background-image: url(../images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #profil {
+  z-index: 1;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center; 
-  background-image: url(../images/logo-bg.png);
-  background-repeat: repeat;
+
 }
 
 #userbanner, #score, #prefere, #sesvideos {
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -695,10 +767,10 @@ object-position: center;
 
 #userbanner {
   height: 168px;
-  background-color: var(--pink);
+  background-color: var(--bluesky);
   display: flex;
   flex-wrap: wrap;
-  margin: 100px 20px;
+  margin: 100px 0px;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -717,39 +789,63 @@ object-position: center;
   align-items: center;
 }
 
-#score {
+.image-container {
+  position: relative; 
+  width: 200px;
+  height: 200px; 
+}
+
+.image-container button{
+  width: 200px;
   margin-top: 30px;
-  margin-bottom: 100px;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image2 {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  bottom: 0; 
+  bottom: -20PX;
+  left: 70PX;
+  height: auto;
+}
+
+
+#score {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #userbanner h3,#profil h3 {
-  font-style: italic;
   font-size: 40px;
   color: var(--blanc);
-  font-family: "IBM Plex Sans";
+  font-family: "Bebas Neue";
 }
 
 #score h4 {
-  font-style: italic;
   font-size: 25px;
-  color: #3858A7;
-  font-family: "IBM Plex Sans";
+  color: var(--thistle);
+  font-family: "Bebas Neue";
 }
+
+
 
 .scorebox {
   width: 282px;
   height: 124px;
   border: none;
-  border-radius: 15px;
   text-align: center;
   align-items: center;
   align-content: center;
 }
 
 #prefere img, #sesvideos img {
-  width: 278px;
-  height: 205px;
-  border-radius: 15px;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -758,10 +854,9 @@ object-position: center;
 #profil h2 {
   font-size: 30px;
   font-weight: 700;
-  font-style: italic;
-  color: #3CB4D9;
+  color: var(--blanc);
   margin-bottom: 30px;
-  font-family: "IBM Plex Sans";
+  font-family: "Bebas Neue";
   text-align: left;
   width: 100%; 
   box-sizing: border-box; 
@@ -775,10 +870,26 @@ object-position: center;
   gap: 20px;
   justify-content: center; 
 }
+.flexrow{
+width: 100%;
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+}
+.plus {
+  font-style: italic;
+  font-size: 25px;
+  color: var(--blanc);
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
 
 #sesvideos {
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /*profil fini*/
@@ -797,7 +908,7 @@ object-position: center;
 }
 
 footer {
-  background-color: #ffafcc;
+  background-color: var(--bluesky);
 }
 
 .footer-container {
@@ -830,7 +941,7 @@ footer {
 
 .subscribe h3 {
   color: var(--blanc);
-  font-family:"IBM Plex Sans";
+  font-family:"IBM Plex Sans", sans-serif;
 }
 
 .inputtext {
@@ -839,7 +950,6 @@ footer {
   background-color: var(--blanc);
   width: 300px;
   height: 40px;
-  border-radius: 10px;
 }
 
 .input {
@@ -856,16 +966,16 @@ footer {
   cursor: pointer;
     outline: none;
     border: none;
-    background-color: var(--blanc);
-    color: var(--pink);
-    border-radius: 8px;
+    background-color: var(--vert);
+    color: var(--thistle);
     font-size: 16px;
     margin-right: 20px;
-    width: 100px;
+    width: 150px;
     height: 40px;
+    font-family: 500;
   }
-  .button:hover{  background-color: var(--light-rose);
-    color: var(--blanc);
+  .button:hover{  background-color: var(--thistle);
+    color: var(--vert);
   }
 
 .subscribe p {
@@ -879,7 +989,7 @@ footer hr {
 }
 
 .copyright {
-  color: var(--blanc);
+  color: var(--thistle);
   padding: 0px 50px 25px 50px;
   font-size: 12px;
   text-align: center;

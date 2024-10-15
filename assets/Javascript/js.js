@@ -1,82 +1,4 @@
-const users = JSON.parse(localStorage.getItem('users')) || []
-function saveUser(user, password) {
-    users.push({ user, password });
-    localStorage.setItem('users', JSON.stringify(users));
-}
-// button inscription function
-document.getElementById('inscrire').addEventListener('click', function () {
-    if (document.getElementById('inscrire').innerText === "Inscription") {
-        document.getElementById('homePage').style.display = 'none';
-        document.getElementById('connectPage').style.display = 'none';
-        document.getElementById('inscrirePage').style.display = 'block';
-    } else {
-        logout();
-    }
-});
-
-// text connect function
-document.getElementById('connect').addEventListener('click', function() {
-    if (document.getElementById('connect').innerText === "Connexion") {
-    document.getElementById('homePage').style.display = 'none';
-    document.getElementById('connectPage').style.display = 'block';
-    document.getElementById('inscrirePage').style.display = 'none';
-}else {
-    logout();
-}
-});
-
-// connectPage function
-document.getElementById('connectButton').addEventListener('click', function() {
-    const user = document.getElementById('connectUser').value;
-    const password = document.getElementById('connectPassword').value;
-    const foundUser = users.find(u => u.user === user && u.password === password);
-    if (foundUser) {
-        alert(`Bienvenue, ${user}!`);
-        document.getElementById('connectPage').style.display = 'none';
-        document.getElementById('homePage').style.display = 'block';
-        document.getElementById('inscrirePage').style.display = 'none';
-        // changer text deconnexion
-        document.getElementById('connect').innerHTML = 'Déconnexion';
-    } else {
-        alert('Id et mot de pass ne sont pas correct!');
-    }
-});
-
-// text creer compt function
-document.getElementById('newUserLink').addEventListener('click', function() {
-    document.getElementById('connectPage').style.display = 'none';
-    document.getElementById('inscrirePage').style.display = 'block';
-    document.getElementById('homePage').style.display = 'none';
-});
-
-// rigisterpage function
-document.getElementById('inscrireButton').addEventListener('click', function() {
-    const user = document.getElementById('inscrireUser').value;
-    const password = document.getElementById('inscrirePassword').value;
-    if (user && password) {
-        saveUser(user, password);
-        alert(`User ${user}  s'est inscrite avec succès !`);
-        document.getElementById('inscrirePage').style.display = 'none';
-        document.getElementById('homePage').style.display = 'block';
-        document.getElementById('connectPage').style.display = 'none';
-        // deconnection
-        document.getElementById('connect').innerHTML = 'Déconnexion';
-    } else {
-        alert('Entre votre id et mot de pass!');
-    }
-});
-
-// logout
-function logout() {
-    document.getElementById('homePage').style.display = 'block';
-    document.getElementById('connectPage').style.display = 'none';
-    document.getElementById('inscrirePage').style.display = 'none';
-    document.getElementById('connect').innerHTML = "Connexion";
-    alert('Vous avez quitté!');
-}
-
-
-
+    
 //topic js
 const articles = [
     {
@@ -570,40 +492,43 @@ const articles3 = [
         duree: "20 min"
     }];
 
-function articlesAffiche(dataArray, containerId, categorie) {
-    let container = document.getElementById(containerId);
-    if (!container) {
-        return;
-    }
-    container.innerHTML = '';
-    dataArray.filter(article => 
-        categorie === 'all' || article.categorie === categorie
-    ).forEach(article => {
-        const articleHtml = `
-            <div class="article">
-            <a href="../pages/entrainement-fiche.html" target="_blank">
-                <img src="${article.image}" alt="${article.titre}"  class="large-image">
-                <div class="small-image-wrapper">
-                    <img src="../assets/images/video.png" alt="" class="small-image">
-                </div>
-                <div class="overlay">
-                    <div class="articlebg">
-                        <h2 class="article-h2">${article.titre}</h2>
-                        <h3 class="article-h3">difficulte: ${article.difficulte}</h3>
-                        <div class="info">
-                            <span>${article.categorie}</span>
-                            <span><b>${article.duree}</b></span>
+    function articlesAffiche(dataArray, containerId, categorie, classModifier) {
+        let container = document.getElementById(containerId);
+        if (!container) {
+            return;
+        }
+        container.innerHTML = '';
+        dataArray.filter(article => 
+            categorie === 'all' || article.categorie === categorie
+        ).forEach(article => {
+            const articleHtml = `
+                <div class="article ${classModifier}">
+                <a href="../pages/entrainement-fiche.html" target="_blank">
+                    <img src="${article.image}" alt="${article.titre}" class="large-image">
+                    <div class="small-image-wrapper ${classModifier}">
+                        <img src="../assets/images/video.png" alt="" class="small-image">
+                    </div>
+                    <div class="overlay ${classModifier}">
+                        <div class="articlebg">
+                            <h2>${article.titre}</h2>
+                            <h3>difficulte: ${article.difficulte}</h3>
+                            <div class="info">
+                                <span>${article.categorie}</span>
+                                <span><b>${article.duree}</b></span>
+                            </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-                </a>
-            </div>
-        `;
-        container.innerHTML += articleHtml;
-    });
-}
-document.addEventListener('DOMContentLoaded', function() {
-    articlesAffiche(articles, 'articles-container', 'all');
-    articlesAffiche(articles2, 'articles2-container', 'all');
-    articlesAffiche(articles3, 'articles3-container', 'all');
+            `;
+            container.innerHTML += articleHtml;
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        articlesAffiche(articles, 'articles-container', 'all', 'style1');
+        articlesAffiche(articles2, 'articles2-container', 'all', 'style2');
+    articlesAffiche(articles3, 'articles3-container', 'all', 'style3');
 });
+
+
