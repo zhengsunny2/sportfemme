@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/entrainement_fiche.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -43,192 +43,96 @@
               </div>
       </nav> 
   </header>
-    <main id="grid-entrainement">
-      <!-- SECTION APERCU VIDEO -->
-      <section id="vid-preview" class="vid-preview">
-        <h1>Fiche</h1>
-        <!-- <div class="video-illustration"> -->
-        <video autoplay muted loop>
-          <source src="../assets/video/woman_boxing.mp4" type="video/mp4" />
-        </video>
-        <!-- </div> -->
+    <main id="">
+      <video autoplay loop src="/assets/video/fiche_entrainement_illustration_yoga.mp4"></video>
+<div class="stats">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  8.8 notes
+</span>
+<span>
+  <i class="fa-solid fa-heart"></i>
+  1000 favoris
+</span>
+<span>
+  <i class="fa-solid fa-fire"></i>
+  10 fois de pratique
+</span>
+<span>
+  <i class="fa-solid fa-share"></i>
+  50 transmettre
+</span>
+</div>
+<h1>YOGA</h1>
+<div class="yoga-desc">
+  <div class="info-entrainement">
+    <p>N1</p>
+    <p>NIVEAU</p>
+    <p>10 MIN</p>
+    <p>DUREE</p>
+    <p>46-70</p>
+    <p>CALORIES</p>
+    <div class="info-professionnelle">
+      <h4>LILI JOHANA</h4>
+      <button>+ S'ABONNER</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis necessitatibus nisi esse, corporis in. Labore numquam eligendi odio voluptas ipsa error atque ad natus quis! At incidunt corporis praesentium.[+PLUS]</p>
+    </div>
+      <section id="episodes">
+      <h2>EPISODES</h2>
+      <a href="#" id="loadMore">Plus >></a>
+      <div class="bg-container-episode">
+        <div class="container-episode">
+          <video class="vid-episode" src="/assets/video/fiche_entrainement_illustration_yoga.mp4" controls></video>
+          <video class="vid-episode" src="/assets/video/fiche_entrainement_illustration_yoga.mp4"></video>
+          <video class="vid-episode" src="/assets/video/fiche_entrainement_illustration_yoga.mp4"></video>
+        </div>
+      </div>
       </section>
-      <section id="desc" class="desc">
-        <div class="boxing-desc">
-          <div class="flex-end">
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h2>Lorem, ipsum.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odit!
-          </p>
-          <p>Difficulté: <i class="fa-solid fa-star"></i></p>
-          <p>Matériel: Gant de boxe</p>
-          <p>Temps: 10min</p>
+      <section id="reviews">
+        <h2>COMMENTAIRE ET AVIS</h2>
+        <img src="/assets/images/avatar.png" alt="" srcset="">
+        <form action="" method="post" class="form-reviews">
+          <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class=" fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span>
+          <textarea name="comment" id="comment" rows="4" placeholder="Ajouter un commentaire..."></textarea>
+          <button type="submit">ENVOYER</button>
+        </form>
+        <div class="reviews-users">
+          <img src="" alt="">
+          <p>Commentaire d'une abonnée sur la vidéo</p>
+          <span class="container-star-reviews">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+        <div class="reviews-users">
+          <img src="" alt="">
+          <p>Commentaire d'une abonnée sur la vidéo</p>
+          <span class="container-star-reviews">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
         </div>
       </section>
-      <!-- SECTION COMMENTAIRE -->
-      <section id="review" class="review">
-        <!-- Commentaire apres visualisation -->
-        <div id="userReview">
-          <label for="comment">Commentaires</label><br />
-          <input
-            type="text"
-            id="comment-input"
-            name="comment-input"
-            placeholder="Veuillez ecrire votre avis ici "
-          />
-
-          <button id="addComment">Envoyer</button>
-          <div class="stars">
-            <span class="star" data-value="1">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="5">&#9733;</span>
+      <section id="suggestions">
+        <h2>SUGGESTIONS</h2>
+        <a href="#" id="loadMore">Plus >></a>
+        <div class="bg-container-suggestions">
+          <div class="container-suggestions">
+            <video class="vid-suggestions" src="/assets/video/fiche_entrainement_illustration_yoga.mp4"></video>
+            <video class="" src="/assets/video/fiche_entrainement_illustration_yoga.mp4"></video>
+            <video class="" src="/assets/video/fiche_entrainement_illustration_yoga.mp4"></video>
           </div>
         </div>
-        <ul id="review-container">
-          <!-- avis 1 -->
-          <li class="review1">
-            <div class="star-rating">
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-            </div>
-            <div class="inline-block">
-              <p class="client">Jane Doe</p>
-              <p class="date">07/06/2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
-              harum!
-            </p>
-          </li>
-          <!-- avis 2 -->
-          <li class="review2">
-            <div class="star-rating">
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star no-checked"></i>
-            </div>
-            <div class="inline-block">
-              <p class="client">Jane Doe</p>
-              <p class="date">07/06/2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
-              harum!
-            </p>
-          </li>
-          <!-- avis 3 -->
-          <li class="review3">
-            <div class="star-rating">
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-            </div>
-            <div class="inline-block">
-              <p class="client">Jane Doe</p>
-              <p class="date">07/06/2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
-              harum!
-            </p>
-          </li>
-        </ul>
       </section>
-      <!-- SECTION MULTIMEDIA/PLAYLIST  -->
-      <section id="playlist" class="playlist">
-        <h2>Suggestion</h2>
-        <ul class="suggestions-playlist">
-          <li class="playlist-video">
-            <article>
-              <video controls autoplay id="fullScreen1">
-                <source
-                  class="video-source"
-                  src="../assets/video/woman_boxing.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <h3>Lorem, ipsum.</h3>
-              <p></p>
-            </article>
-          </li>
-          <li class="playlist-video">
-            <article>
-              <video controls>
-                <source
-                  class="video-source"
-                  src="../assets/video/woman_boxing.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <h3>Lorem, ipsum.</h3>
-              <p></p>
-            </article>
-          </li>
-          <li class="playlist-video">
-            <article>
-              <video controls>
-                <source
-                  class="video-source"
-                  src="../assets/video/woman_boxing.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <h3>Lorem, ipsum.</h3>
-              <p></p>
-            </article>
-          </li>
-          <li class="playlist-video">
-            <article>
-              <video controls>
-                <source
-                  class="video-source"
-                  src="../assets/video/woman_boxing.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <h3>Lorem, ipsum.</h3>
-              <p></p>
-            </article>
-          </li>
-          <li class="playlist-video">
-            <article>
-              <video controls>
-                <source
-                  class="video-source"
-                  src="../assets/video/woman_boxing.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <h3>Lorem, ipsum.</h3>
-              <p></p>
-            </article>
-          </li>
-          <li class="playlist-video">
-            <article>
-              <video controls>
-                <source
-                  class="video-source"
-                  src="../assets/video/woman_boxing.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <h3>Lorem, ipsum.</h3>
-              <p></p>
-            </article>
-          </li>
-        </ul>
-      </section>
+    </div>
+  
+</div>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -262,8 +166,6 @@
                   </form>
               </div>
           </div>
-
-             
           </div>       
       </div>
       <hr>
