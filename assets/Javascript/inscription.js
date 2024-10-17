@@ -11,6 +11,12 @@ document.getElementById('newUserLink')?.addEventListener('click', function () {
     document.getElementById('inscrirePage').style.display = 'block';
 });
 
+// Click to switch to connection page
+document.getElementById('connectpage')?.addEventListener('click', function () {
+    document.getElementById('connectPage').style.display = 'block';
+    document.getElementById('inscrirePage').style.display = 'none';
+});
+
 // Connect button functionality
 document.getElementById('connectButton')?.addEventListener('click', function() {
     const user = document.getElementById('connectUser').value;
@@ -20,11 +26,13 @@ document.getElementById('connectButton')?.addEventListener('click', function() {
     if (foundUser) {
         alert(`Bienvenue, ${user}!`);
         localStorage.setItem('currentUser', user);  // Save current user to localStorage
-        window.location.href = 'profil.html';  // Redirect to profile page
+        window.location.href = '../pages/profil.html';  // Redirect to profile page
     } else {
         alert('Id et mot de pass ne sont pas correct!');
     }
 });
+
+
 
 // Register button functionality
 document.getElementById('inscrireButton')?.addEventListener('click', function() {
@@ -40,7 +48,7 @@ document.getElementById('inscrireButton')?.addEventListener('click', function() 
             saveUser(user, password);
             alert(`User ${user} s'est inscrit avec succès!`);
             localStorage.setItem('currentUser', user);  // Save current user to localStorage
-            window.location.href = 'profil.html';  // Redirect to profile page
+            window.location.href = '../pages/profil.html';  // Redirect to profile page
         }
     } else {
         alert('Entre votre id et mot de pass!');
@@ -53,18 +61,18 @@ function updateHeader() {
     const connectElement = document.getElementById('connect');
     
     if (currentUser) {
-        connectElement.innerText = 'Connexion'; 
+        connectElement.innerText = 'Déconnexion'; 
         connectElement.onclick = logout;  // Bind logout function
     } else {
-        connectElement.innerText = 'Déconnexion'; 
-        connectElement.onclick = function() { window.location.href = 'entrainement.html'; };  // Redirect to login page
+        connectElement.innerText = 'SE CONNECTER'; 
+        connectElement.onclick = function() { window.location.href = '../pages/entrainement.html'; };  // Redirect to login page
     }
 }
 
 // Logout functionality
 function logout() {
     localStorage.removeItem('currentUser');  // Remove current user from localStorage
-    window.location.href = 'entrainement.html';  // Redirect to homepage after logout
+    window.location.href = '../pages/entrainement.html';  // Redirect to homepage after logout
     alert('Vous avez quitté!');
 }
 
