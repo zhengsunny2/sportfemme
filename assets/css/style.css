@@ -977,8 +977,18 @@ footer hr {
   justify-content: space-evenly;
   margin-top: 0.5rem;
 }
+
+.info-professionnelle {
+  display: flex;
+}
 video {
   width: 100%;
+}
+
+.info-pratique {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
 }
 
 .form-reviews {
@@ -1001,4 +1011,17 @@ video {
 .container-suggestions > video {
   width: 33%;
   height: auto;
+}
+
+/* COMMENTAIRE ET AVIS */
+.info-autrice {
+  width: 100px;
+  height: auto;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
