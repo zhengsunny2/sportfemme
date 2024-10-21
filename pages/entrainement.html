@@ -7,23 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Entrainement-SportFemme</title>
 </head>
-<body>
+<body background="../assets/images/bg6.png">
     <header>
         <nav>
-            <div class="navbar-container">
-                <div class="logo-container">
-                    <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
-                </div>
-                
-                <div class="profil">
-                <h3 id="connect">Connexion</h3>
-                <div  class="profil-picture-container">
-                    <a href="profil.html"><img  src="../assets/images/Ellipse 8.png" alt="profil-picture"></a>
-                </div>
-                <button id="inscrire">Inscription</button>
-                </div>
-            </div>
-                <div class="navbar-links-box">
+            <nav>
+                <div class="navbar-container">
+                    <div class="logo-container">
+                        <a href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+                    </div>
                     <ul class="navbar-links">
                         <li><a href="../index.html">ACCUEIL</a></li>
                         <li><a href="../pages/entrainement.html">ENTRAINEMENTS</a></li>
@@ -32,54 +23,26 @@
                         <li><a href="../pages/contact.html">CONTACT</a></li>
                     </ul>
                     <div class="iconCompte"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
+                    <button id="connect"><a href="../pages/inscription.html">SE CONNECTER</a></button>
+                </div>  
+            </nav>
         </nav> 
     </header>
     <main>
-        <div id="logincontainer">
-         <div id="connectPage" class="page" style="display: none;">
-              <h2>CONNECT</h2>
-             <div>
-                 <label for="connectUser">User:</label>
-                 <input type="text" id="connectUser" name="connectUser">
-             </div>
-             <div>
-                 <label for="connectPassword">Password:</label>
-                 <input type="password" id="connectPassword" name="connectPassword">
-             </div>
-             <button id="connectButton">connect</button>
-             <p><a href="" id="newUserLink">Creer un compte!</a></p>
-         </div>
- 
-         <div id="inscrirePage" class="page" style="display: none;">
-            <h2>INSCRIRE</h2>
-             <div>
-                 <label for="inscrireUser">User:</label>
-                 <input type="text" id="inscrireUser" name="inscrireUser">
-             </div>
-             <div>
-                 <label for="inscrirePassword">Password:</label>
-                 <input type="password" id="inscrirePassword" name="inscrirePassword">
-             </div>
-             <button id="inscrireButton">inscrire</button>
-         </div>
-     </div>
-     <div id="homePage" >
         <div id="container">
-            <button class="button-h1">ENTRAINEMENT</button>
+            <div class="h1left"><h1>ENTRAINEMENT</h1></div>
             <div id="filter">
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'all')">Tout</button>
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'Yoga')">Yoga</button>
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'Dance')">Dance</button>
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'Aerobic')">Aérobic</button>
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'sports')">Sports de plein air</button>
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'balle')">Jeux de balle</button>
-                <button class="button-filter" onclick="articlesAffiche(articles, 'articles-container', 'fitness')">Appareils de fitness</button>
+                <button class="button-filter button-filter1" onclick="articlesAffiche(articles, 'articles-container', 'all', 'style1')">Tout</button>
+                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'Yoga', 'style1')">Yoga</button>
+                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'Dance', 'style1')">Dance</button>
+                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'Aerobic', 'style1')">Aérobic</button>
+                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'sports', 'style1')">Sports de plein air</button>
+                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'balle', 'style1')">Jeux de balle</button>
+                <button class="button-filter button-filter1"  onclick="articlesAffiche(articles, 'articles-container', 'fitness', 'style1')">Appareils de fitness</button>
             </div>
             <div id="articles-container"></div>
     
         </div>
-     </div>
         <script src="../assets/Javascript/js.js"></script>
     </main>
     <footer>
@@ -87,7 +50,7 @@
             <div class="left">                
                 <div class="logo">
                 <div class="logo-container">
-                    <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+                    <a href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
                 </div>
                 <div class="social-media">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -108,7 +71,7 @@
                     <form>
                         <div class="input">
                             <input type="email" class="inputtext">
-                            <input type="button" value="s'inscrire" class="button">
+                            <input type="button" value="S'INSCRIRE" class="button">
                         </div>
                     </form>
                 </div>
