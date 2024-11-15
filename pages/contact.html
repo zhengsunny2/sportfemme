@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/index-gestion_profil-contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
    <link rel="stylesheet" href="../assets/Javascript/inscription.js">
     <title>Contact</title>
@@ -12,58 +12,56 @@
 
 <body>
     
-        <header>
-            <nav>
-                <div class="navbar-container">
-                    <div class="logo-container">
-                        <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
-                    </div>
+    <header>
+        <nav id="contact">
+            <div class="navbar">
+
+                    <a href="index.html"><img id="logo-acceuil" src="../assets/images/logo.png" alt="logo"></a>
                     
-                    <div class="profil">
-                        <h3 ></h3>
-                    <div  class="profil-picture-container">
-                        <a href="pages/profil.html"><img src="../assets/images/profilimg.png" alt="profil-picture"></a>
+                    <div class="navbar-lien">
+                        
+                        <a href="../index.html">ACCUEIL</a>
+                        <a href="../pages/entrainement.html">ENTRAINEMENTS</a>
+                        <a href="pages/nutrition.html">NUTRITION</a>
+                        <a href="pages/documentaire.html">DOCUMENTAIRES</a>
+                        <a href="pages/contact.html">CONTACT</a>
+                        
                     </div>
-                    <button id="connect"><a href="pages/inscription.html"></a>SE CONNECTER</a></button>
+
+                    <div class="navbar-bouton">
+                        <a href="pages/profil.html"><img src="../assets/images/profilimg.png" alt="image-profil"></a>
+                        <button><a href="../pages/connexion.html">SE CONNECTER</a></button>
+                        <button><a href="pages/inscription.html">S'INSCRIRE</a></button>
                     </div>
-                </div>
-                    <div class="navbar-links-box">
-                        <ul class="navbar-links">
-                            <li><a href="../index.html">ACCUEIL</a></li>
-                            <li><a href="entrainement.html">ENTRAINEMENTS</a></li>
-                            <li><a href="nutrition.html">NUTRITION</a></li>
-                            <li><a href="documentaire.html">DOCUMENTAIRES</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul>
-                        <div class="iconCompte"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div>
-                    <div>
-                        <h1>on reste en contact</h1>
-                       
-                    </div>
-            </nav> 
-        </header>
+            </div>
+            
+            <div class="navbar-texte">
+                    <h1>Contact</h1>
+            </div>
+        </nav> 
+    </header>
     
 <main>
-    <div id="logincontainer-contact">
-        <img src="../assets/images/Logo-Icones/icone-turquoise-sans-fond.png" alt="">
+    <div class="logo-form-contact">
+        <img src="../assets/images/Logo-Icones/icone-sapin-sans-fond.png" alt="">
     
-        <form id="form-contact" action="" method="post">
-            <ul>
-                <li>
-                    <label for="contact-name">Nom</label>
+        <form class="form-contact" method="post">
+               <div> 
+                    <label for="contact-nom">Nom</label>
                     <input type="text">
-                </li>
+                </div>
 
-                <li><label for="contact-mail">E-Mail </label>
+                <div>
+                    <label for="contact-mail">E-Mail </label>
                     <input type="email">
-                </li>
+                <div>
 
-                <li><label for="contact-msg">Message</label>
+                <div id="form-contact-msg">
+                    <label for="contact-msg">Message</label>
                     <textarea name="msg" id="user-msg"></textarea>
-                </li>
-            </ul>
-            <button type="submit">Envoyer</button>
+                <div>
+            
+            <button>Envoyer</button>
         </form>
    </div> 
        
